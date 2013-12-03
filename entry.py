@@ -34,7 +34,7 @@ curr_size = 0
 old_size = 0
 mode = -1 #notes the state of the last trial
 while (1):
-	os.system('wget --quiet http://www.libetech.com/valid.txt')
+	os.system('wget --quiet http://www.hotelalouve/valid.txt')
 	val = subprocess.check_output(["tail", "-n", "1", "tmp.txt"]).strip()
 	curr_size = os.path.getsize('tmp.txt')
 	if curr_size != old_size:
